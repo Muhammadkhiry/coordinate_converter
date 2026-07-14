@@ -52,7 +52,7 @@ Supported systems:
 
 ## 📍 Cartesian Coordinates
 
-| Input | Result |
+| Cartesian Input | Result |
 |-------|--------|
 | <img src="screenshots/display_cart.png" width="300"> | <img src="screenshots/convert_from_cart.png" width="300"> |
 
@@ -60,15 +60,15 @@ Supported systems:
 
 ## 📍 Cylindrical Coordinates
 
-| Input | Result |
+| Cylindrical Input | Result |
 |-------|--------|
-| <img src="screenshots/display_cyl.png" width="300"> | <img src="screenshots/convert_from_cycl.png" width="300"> |
+| <img src="screenshots/display_cycl.png" width="300"> | <img src="screenshots/convert_from_cycl.png" width="300"> |
 
 ---
 
 ## 📍 Spherical Coordinates
 
-| Input | Result |
+| Spherical Input | Result |
 |-------|--------|
 | <img src="screenshots/display_sphe.png" width="300"> | <img src="screenshots/convert_from_sphe.png" width="300"> |
 
