@@ -1,6 +1,4 @@
-////////////////////////////////////////////////////
 // User interface...................................
-////////////////////////////////////////////////////
 import 'package:coordinate_converter/functions/covert_functions.dart';
 import 'package:flutter/material.dart';
 
@@ -69,7 +67,7 @@ class _ConverterViewState extends State<ConverterView> {
               /////////////////////////////////////////////
               // ---------------- Converting Button ----------------
               /////////////////////////////////////////////
-              Container(
+              SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () {
