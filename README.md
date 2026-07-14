@@ -1,89 +1,90 @@
 # 📐 Coordinate Converter
 
-A Flutter application that converts coordinates between the three most common 3D coordinate systems:
+<p align="center">
+  <img src="assets/OIP.webp" width="180"/>
+</p>
 
-- Cartesian Coordinates
-- Spherical Coordinates
-- Cylindrical Coordinates
+<h1 align="center">
+Coordinate Converter
+</h1>
 
-The application provides an intuitive interface for entering coordinates, performing instant conversions, and displaying the equivalent coordinates in all supported systems.
+<p align="center">
+Convert between Cartesian, Cylindrical and Spherical Coordinate Systems using Flutter.
+</p>
+
+<p align="center">
+
+![Flutter](https://img.shields.io/badge/Flutter-3.35-blue?logo=flutter)
+
+![Dart](https://img.shields.io/badge/Dart-3.x-blue?logo=dart)
+
+![Platform](https://img.shields.io/badge/Platform-Android-success)
+
+![License](https://img.shields.io/badge/License-MIT-green)
+
+</p>
 
 ---
 
-## 📸 Screenshots
+# ✨ Overview
 
-| Home | Cartesian |
-|------|-----------|
-| <img src="screenshots/home_view.png" width="280"/> | <img src="screenshots/display_cart.png" width="280"/> |
+Coordinate Converter is a Flutter application that converts points between the three most common 3D coordinate systems.
 
-| Cartesian Conversion | Cylindrical |
-|----------------------|-------------|
-| <img src="screenshots/convert_from_cart.png" width="280"/> | <img src="screenshots/display_cyl.png" width="280"/> |
+The application performs all mathematical calculations manually without using external conversion libraries.
 
-| Cylindrical Conversion | Spherical |
-|------------------------|-----------|
-| <img src="screenshots/convert_from_cycl.png" width="280"/> | <img src="screenshots/display_sphe.png" width="280"/> |
+Supported systems:
 
-| Spherical Conversion |
-|----------------------|
-| <img src="screenshots/convert_from_sphe.png" width="280"/> |
+- Cartesian Coordinates
+- Cylindrical Coordinates
+- Spherical Coordinates
+
+---
+
+# 📸 Screenshots
+
+## 🏠 Home
+
+<p align="center">
+<img src="screenshots/home_view.png" width="300">
+</p>
+
+---
+
+## 📍 Cartesian Coordinates
+
+| Input | Result |
+|-------|--------|
+| <img src="screenshots/display_cart.png" width="300"> | <img src="screenshots/convert_from_cart.png" width="300"> |
+
+---
+
+## 📍 Cylindrical Coordinates
+
+| Input | Result |
+|-------|--------|
+| <img src="screenshots/display_cyl.png" width="300"> | <img src="screenshots/convert_from_cycl.png" width="300"> |
+
+---
+
+## 📍 Spherical Coordinates
+
+| Input | Result |
+|-------|--------|
+| <img src="screenshots/display_sphe.png" width="300"> | <img src="screenshots/convert_from_sphe.png" width="300"> |
 
 ---
 
 # ✨ Features
 
 - Convert Cartesian coordinates.
-- Convert Spherical coordinates.
 - Convert Cylindrical coordinates.
-- Instant conversion between all coordinate systems.
-- Mathematical calculations implemented manually.
-- Clean and responsive UI.
-- Modular project architecture.
-- Null-safe Dart code.
-
----
-
-# 📚 Coordinate Systems
-
-## Cartesian
-
-Represents a point using
-
-```
-(x, y, z)
-```
-
----
-
-## Cylindrical
-
-Represents a point using
-
-```
-(ρ, φ, z)
-```
-
-where
-
-- ρ → Distance from Z-axis
-- φ → Angle in degrees
-- z → Height
-
----
-
-## Spherical
-
-Represents a point using
-
-```
-(r, θ, φ)
-```
-
-where
-
-- r → Distance from origin
-- θ → Polar angle
-- φ → Azimuth angle
+- Convert Spherical coordinates.
+- Instant conversion to all coordinate systems.
+- Manual mathematical calculations.
+- Responsive UI.
+- Reusable Widgets.
+- Clean Architecture.
+- Null Safety.
 
 ---
 
@@ -91,7 +92,7 @@ where
 
 ## Cartesian → Spherical
 
-```
+```text
 r = √(x² + y² + z²)
 
 θ = arccos(z / r)
@@ -103,7 +104,7 @@ r = √(x² + y² + z²)
 
 ## Cartesian → Cylindrical
 
-```
+```text
 ρ = √(x² + y²)
 
 φ = atan2(y, x)
@@ -115,10 +116,10 @@ z = z
 
 ## Cylindrical → Cartesian
 
-```
-x = ρ cos φ
+```text
+x = ρ cosφ
 
-y = ρ sin φ
+y = ρ sinφ
 
 z = z
 ```
@@ -127,7 +128,7 @@ z = z
 
 ## Cylindrical → Spherical
 
-```
+```text
 r = √(ρ² + z²)
 
 θ = atan2(ρ, z)
@@ -139,7 +140,7 @@ r = √(ρ² + z²)
 
 ## Spherical → Cartesian
 
-```
+```text
 x = r sinθ cosφ
 
 y = r sinθ sinφ
@@ -151,7 +152,7 @@ z = r cosθ
 
 ## Spherical → Cylindrical
 
-```
+```text
 ρ = r sinθ
 
 φ = φ
@@ -161,9 +162,9 @@ z = r cosθ
 
 ---
 
-# 🏗️ Project Structure
+# 📂 Project Structure
 
-```
+```text
 lib
 │
 ├── models
@@ -193,13 +194,13 @@ Clone the repository
 git clone https://github.com/Muhammadkhiry/coordinate_converter.git
 ```
 
-Go to the project
+Move into the project
 
 ```bash
 cd coordinate_converter
 ```
 
-Install dependencies
+Install packages
 
 ```bash
 flutter pub get
@@ -221,23 +222,13 @@ flutter run
 
 ---
 
-# 📦 Packages
+# 🔮 Future Improvements
 
-This project only uses Flutter SDK packages.
-
-No external state management or third-party conversion libraries were used.
-
----
-
-# 🎯 Future Improvements
-
-- Dark / Light Theme
+- Dark Mode
 - Conversion History
-- Copy Result Button
-- Input Validation
-- Unit Tests
-- Landscape Layout
-- Responsive Desktop UI
+- Copy Result
+- Responsive Desktop Layout
+- Unit Testing
 - Animations
 
 ---
@@ -248,11 +239,14 @@ No external state management or third-party conversion libraries were used.
 
 Computer and Systems Engineering Student
 
-GitHub:
+GitHub
+
 https://github.com/Muhammadkhiry
 
 ---
 
-# ⭐ Support
+<p align="center">
 
-If you like this project, consider giving it a ⭐ on GitHub.
+⭐ If you found this project useful, don't forget to star the repository.
+
+</p>
